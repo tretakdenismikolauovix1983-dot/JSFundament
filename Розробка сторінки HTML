@@ -1,1 +1,44 @@
-
+<!DOCYPE html>
+<html lang="uk">
+    <head>
+        <meta charset=""UTF-8">
+        <meta name=""Viewport" content=""width=device-width, inital-scale="1.0">
+        <title>Привіт, світ!</title>
+    <style>
+        body {
+            font-femily: Arial, sans-serif;
+            background-color: #f0f2f5;
+            displey: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: o;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(o,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        <style>
+        </head>
+        <body>
+            <div class=".container">
+                <h1>Привіт, світ!,</h1>
+                <p>Це моя перша веб-сторінка,створена за допомогою HTML ma CSS.</p>
+                </div>
+                </body>
+                </html>
+                }
+    </style></title>
+    </head>
+</html>
