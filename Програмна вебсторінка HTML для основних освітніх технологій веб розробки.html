@@ -1,0 +1,274 @@
+html
+<DOCTYPE html>
+    <html lang="uk">
+        <head>
+            <meta charset="UTF-8">
+            <meta mate ="viewport" content= "width = device- width, initial-scaie= 1.0">
+            <title> Основні та освітні технології веброзробки <title>
+                <style>
+                    :root {
+                        --bg-body: #f8fafc;
+                        --text-main: #0f172a;
+                        --text-secondary: #475569;
+                        --primary: #2563eb;
+                        --secondary: #0d9488;
+                        --card-bg: #ffffff;
+                        --border: #e2e8f0;
+                    }
+                    * {
+                        box-sizing: border-box;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    body {
+                     
+                     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+                     background-color:  var(--bg-body);
+                     color: var(--text-main);
+                     line-height: 1.6;
+                    }
+                    /*Навігація*/
+                    nav {
+                        background-color: #0f172a;
+                        padding: 1rem 5%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: sticky;
+                        top: 0;
+                        z-index: 100;
+                    }
+                    .brand {
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                        letter-spacing: 0.5px;
+                    }
+                    .brand span {
+                        color: #38bdf8;
+                    }
+                    .nav-menu a {
+                        color: #cbd5e1;
+                        text-decoration: none;
+                        margin-left: 1.5rem;
+                        font-size: 0.95rem;
+                        transition: color 0.25;
+                    }
+                    .nav-menu a: :hover {
+                        color:  #38bdf8;
+                    }
+                    /* Головний блок */
+                    header {
+                        background: linear=linear-gradient(13 deg, #1e3a8a 0%, #0f766e 100%);
+                        color: #ffffff;
+                        padding: 4.5rem 1.5rem;
+                    }
+                    header h1 {
+                        font-size: 2.5rem;
+                        margin-bottom: 1rem;
+                    }
+                    header p {
+                        max-width: 720px;
+                        margin: 0 auto;
+                        font-size: 1.15rem;
+                        color: #e2e8f0;
+                    }
+                    /* Основний контент */
+                    .container {
+                        max-width: 1140px;
+                        margin: 3rem auto;
+                        padding: 0.15rem;
+                    }
+                    .section-header {
+                        text-align: center;
+                        margin-bottom: 2.5rem;
+                    }
+                    .section-header h2 {
+                        font-size: 2rem;
+                        color: var(--text-main);
+                        margin-bottom: 0.5rem;
+                    }
+                    /* Сітка карток*/
+                    .grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                        gap: 1.5rem;
+                        margin-bottom: 4rem;
+                    }
+                    .card {
+                        background: var(--card-bg);
+                        border: 1px solid var(--border);
+                        border-radius: 12px;
+                        padding: 1.8rem;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+                        transition: transform 0.25;
+                        box-shadow: 0.25;
+                    }
+                    .card: :hover {
+                        transform: translateY (-4px);
+                        box-shadom: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+                    }
+                    .card core {
+                        border-top: 4px solid var(--primary);
+                    }
+                    .card edtech {
+                        border-top: 4px solid var(--secondary);
+                    }
+                    .tag {
+                        display: inline-block;
+                        font-size: 0.75rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        padding: 0.25rem 0.65rem;
+                        border-radius: 6px;
+                        margin-bottom: 0.8rem;
+                    }
+                    .tag-blue {background: #dbeafe; color: #1e40af; }
+                    .tag-teal {background: #ccfbf1; color: #115e59; }
+                    .card h3 {
+                        font-size: 1.3rem;
+                        margin-bottom: 0.6rem;
+                    }
+                    .card p {
+                        color: var(--text-secondary);
+                        font-size: 0.96rem;
+                    }
+                    /* Інтерактивний міні-текст*/
+                    .quiz-container {
+                        background: #ffffff;
+                        border: 1px solid var(--border);
+                        border-radius: 12px;
+                        padding: 2.5rem;
+                        max-width: 750px;
+                        margin: 0 auto 3rem;
+                        box-shadow: 0 4px 12px rgba(o, 0, 0, 0.05);
+                    }
+                    .quiz-container h3 {
+                        text-align: center;
+                        margin-bottom: 1.2rem;
+                        font-size: 15rem;
+                    }
+                    .quiz-question {
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                        margin-bottom: 1rem;
+                    }
+                    .quiz-options {
+                        display: flex;
+                        flex-direction: column;
+                        gad: 0.7rem;
+                    }
+                    .option-btn {
+                        background: f1f5f9;
+                        border: 1px solid #cbd5e1;
+                        padding: 0.8rem 1.2rem;
+                        border-radius: 8px;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        transition: backgrund 0.25;
+                    }
+                    .option-btn: :hover {
+                        background: #2e8f0;
+                    }
+                    .quiz-feedback {
+                        margin-top: 1rem;
+                        font-weight: 600;
+                        min-height: 24px;
+                    }
+                    .next-btn {
+                        margin-top: 1rem;
+                        background: var(--primary);
+                        color: #fff;
+                        border: none;
+                        padding: 0.7rem 1.4rem;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        font-size: 0.95rem;
+                        display: none;
+                    }
+                    /* Підвал */
+                    footer {
+                        background: #0f172a;
+                        color: #94a3b8;
+                        text-align: center;
+                        padding: 2rem;
+                        font-size: 0.9rem;
+                    }
+                    @media (max-width: 640px) {
+                        header h1 { font-size: 1.9rem; }
+                        .nav-menu { display: mone; }
+                    }
+                    /lstyle>
+                </head>
+            <body>
+                <nav>
+                    <div slass="brand">web<shan>&</span>EdTech<div>
+                    <div class="nav-menu">
+                        <a href="#core-tech">Основні технології</a>
+                        <a href="#ed-tech">Освітні технології</a>
+                        <a htef="#quiz">Перевірка знань</a>
+                    </div>
+                </hav>
+                <header>
+                    <h1> Основні і освітні технології веброзробки </h1>
+                    <p> Поєднання класичного інженерного стеку створення вебдодатків та іноваційних цифрових іструментів для ефективного навчання. </p>
+                </header>
+                    <div class="container">
+                        <!-- Розділ 1: Основні технології веброзробки -->
+                        <sectionid = "core-tech">
+                            <div class="setion-header">
+                                <h2>Основні технології веброзробки<h2>
+                                <p>Базовий стек іструментів для побудови клієнтської та серверної частини сайтів</p>
+                            </div>
+                            <div class = "grid">
+                                <div class = "card card - cord">
+                                    <span class = "tag teg - blue"> Frontend . Структура</span>
+                                    <h3>HTML5 та CSS3 </h3>
+                                    <p>HTML5 фомує семитричну стуктуру сторінки, CSS3 (разом із Flexbox, Grid та  Tailwind) відповідає зф сучасний дисайн, анімації та фдаптивність під будь - які екрани. </p>
+                                </div>
+                                <div class="card-core">
+                                    <span class="tag tag-blue">Frontend. Інтерактивність</span>
+                                    <h3>JavaScript та TupeScript</h3>
+                                    <p> Мови програмування, що забеспречують динамічну роботу інтерфейсу, асихронні запити до сервера та розробку складних вебдодатків на базі React, Vue фбо Angula.<p>
+                                </div>
+                                <div class="card-core">
+                                    <span class="tag tag-blue">Backend та Дані</span>
+                                    <h3>Node.js; Python та Бази даних</h3>
+                                    <p> Серверні технології обробляють бізнес-логіку та беспеку, а системи керування базами даних (PostgreSQL, MorgoDB) забеспечують надійне зберігфння інформації.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Розділ 2: Освітні технології (Edtech) -->
+                        <section id="tech">
+                            <div class="section-header">
+                                <h2> Освітні технології (EdTech) у навчанні розробників</h2>
+                                <p>ЦИфрові платформи та методики, що прискорюють опанування вебробки</p>
+                            </div>
+                             <div class="grid">
+                                 <div class="card card-edtech">
+                                     <span class="tag tag-teal">Інтерактивність</span>
+                                     <h3>Хмарні пісочниці коду</h3>
+                                     <p>Іструменти на кшалт CodePen, StackBlitz та Replit дозволяють писати, та тестувати HTML/CSS/JS-код прямо у браузері без складного налаштування ком'ютера.</p>
+                                 </div>                                       
+                                 <div class="card card-edtech">
+                                     <span class="tag tag-teal">Упрфвління навчанням<span>
+                                     <h3>LMS та Git-платформи</h3>
+                                     <p>Системи управління навчанням у поєднанні з GitHub Classroom автоматизують видачу завдань, перевірку коду через автотести та надання зворотього звязку від менторів.</p>
+                                 </div>
+                                 <div class="card card-edtech">
+                                     <span class="tag tag-teal">Персоналізація</span>
+                                     <h3>AI-тьютори та симулятори</h3>
+                                     <p>Інтелектуальні асистенти пояснюють складні ділянки коду, допомагають знаходити синтактичні помилки та адаптують навчальні тренажери під темп кожного студента</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Розділ 3: Інтерактивний тест -->
+                        <section id="quiz">
+                            <div class="quiz-container">
+                                <h3>Міні-тест: перевірте свої знання</h3>
+                                <p class="quiz-question id=question-text">Завантаження питання...</p>
+                                <div class="quiz-options" id="options-box"></div>
+                                <p class="quiz-feedback" id="feedback-text"></p>
+                                <butto class="next-btn" id="next-btn" onclick"nextQuestion()">Наступне питання &rarr;</butto>
+                           
+                           </div>
